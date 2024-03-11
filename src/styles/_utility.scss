@@ -1,0 +1,663 @@
+// Utility Classes
+.font-weight-regular {
+  font-weight: 400 !important;
+}
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+.font-weight-bold {
+  font-weight: 600 !important;
+}
+.font-slab {
+  font-family: $headings-font-family;
+}
+
+// Border
+.border-light {
+  border-color: $grey-7 !important;
+}
+
+@media (max-width: 992px) {
+  .border-sm-top {
+    border-top: 1px solid $grey-2;
+  }
+  .border-sm-right {
+    border-right: 1px solid $grey-2;
+  }
+  .border-sm-bottom {
+    border-bottom: 1px solid $grey-2;
+  }
+  .border-sm-left {
+    border-left: 1px solid $grey-2;
+  }
+}
+@media (min-width: 993px) {
+  .border-md-top {
+    border-top: 1px solid $grey-2;
+  }
+  .border-md-right {
+    border-right: 1px solid $grey-2;
+  }
+  .border-md-bottom {
+    border-bottom: 1px solid $grey-2;
+  }
+  .border-md-left {
+    border-left: 1px solid $grey-2;
+  }
+}
+
+// Colors
+.grey-1 {
+  color: $grey-1; //#666
+}
+.grey-2 {
+  color: $grey-2; // #d9d9d9
+}
+.grey-3 {
+  color: $grey-3; // #bbb
+}
+.grey-4 {
+  color: $grey-4; //#999
+}
+.grey-5 {
+  color: $grey-5; // #f8f8f8
+}
+.grey-6 {
+  color: $grey-6; // #444
+}
+.grey-7 {
+  color: $grey-7; // #eaeaea
+}
+.grey-8 {
+  color: $grey-8; //#222
+}
+.grey-9 {
+  color: $grey-9; //f2f2f2
+}
+.grey-10 {
+  color: $grey-10; //888888
+}
+.grey-11 {
+  color: $grey-11; //9CA3AF
+}
+.grey-12 {
+  color: $grey-12; //6B7280
+}
+.primary-color {
+  color: $primary;
+}
+.secondary-color {
+  color: $secondary;
+}
+.orange-color {
+  color: $orange; //#F6511D
+}
+.gold-color {
+  color: $star;
+}
+.green {
+  color: $green;
+}
+.error {
+  color: $error;
+}
+.warning {
+  color: $warning;
+}
+// Backgrounds
+.bg-grey-3 {
+  background: $grey-3;
+}
+.bg-grey-5 {
+  background: $grey-5;
+}
+.bg-grey-9 {
+  background: $grey-9;
+}
+.bg-secondary {
+  background: $secondary;
+}
+.bg-secondary-light {
+  background: $secondary-1;
+}
+
+.disabled-bg {
+  background: $disabled-bg;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// Margin
+.mt-14 {
+  margin-top: 0.875rem;
+}
+.mt-38 {
+  margin-top: 2.375rem;
+}
+.mt-46 {
+  margin-top: 46px;
+}
+.mx-n12 {
+  margin-left: -12px !important;
+  margin-right: -12px !important;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.m-0 {
+  margin: 0px!important;
+}
+
+// Padding
+.pt-d2 {
+  padding-top: 0.2rem;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+// Max Width
+.max-w-70 {
+  max-width: 70px;
+}
+
+.max-w-80 {
+  max-width: 80px;
+}
+.max-w-100 {
+  max-width: 100px;
+}
+.max-w-175 {
+  max-width: 175px !important;
+}
+
+// Min Width
+.min-width-5 {
+  min-width: 5rem;
+}
+.min-width-6d5 {
+  min-width: 6.5rem;
+}
+
+// Min Height
+.min-height-100 {
+  min-height: 100px;
+}
+
+// Min Height for Table
+.min-height-180 {
+  min-height: 180px;
+}
+
+
+.max-height-400 {
+  max-height: 400px;
+}
+
+// Border Radius
+.border-radius-0 {
+  border-radius: 0 !important;
+}
+.border-radius-right-0 {
+  border-radius: 4px 0 0 4px !important;
+}
+.border-radius-left-0 {
+  border-radius: 0 4px 4px 0 !important;
+}
+.border-radius-1 {
+  border-radius: 1rem !important;
+}
+.border-radius-4 {
+  border-radius: 4px !important;
+}
+
+.border-radius-5 {
+  border-radius: 5px !important;
+}
+
+// Transform Scale
+.scale-8 {
+  transform: scale(0.8);
+}
+.scale-1-5 {
+  transform: scale(1.5);
+}
+.scale-2-0 {
+  transform: scale(2);
+}
+
+// Line Height
+.lh-25 {
+  line-height: 25px;
+}
+
+.lh-2 {
+  line-height: 2;
+}
+
+.lh-6 {
+  line-height: 6;
+}
+
+body {
+  //TODO
+  overflow-wrap: break-word;
+}
+
+// File Viewer component
+.document-load-error {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+// profile page
+.profile-icon {
+  width: 128px;
+  height: 128px;
+  cursor: pointer;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-26 {
+  font-size: 26px;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+// cursor pointer
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+// Min Height
+.min-height-100h {
+  min-height: 100vh;
+}
+
+.btn-new-secondary {
+  background: rgba(19,138,169,0.05);
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: none;
+  color: $primary
+}
+
+.btn-new-danger {
+  background: #e78c9552;
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: none;
+  color: #dc3545;
+}
+
+.primary-background {
+  background-color: $primary;
+}
+
+.opacity-50{
+  opacity: 0.5;
+}
+
+.f-21{
+  font-size: 1.3125rem;
+}
+
+.f-32{
+  font-size: 2rem;
+}
+
+.border-right-gray{
+  border-right: 1px solid#F7F8FA;
+}
+
+.border-bottom-gray{
+  border-bottom: 1px solid#F7F8FA;
+}
+
+.border-top-gray{
+  border-top: 1px solid#F7F8FA;
+}
+
+.primary-color-2 {
+  color: #138AA9;
+}
+
+.background-primary{
+  background-color: #138AA9;
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.border-bottom-black{
+  border-bottom: 1px solid #182233;
+}
+
+//width
+.w-5{
+  width: 5%;
+}
+.w-6{
+  width: 6%;
+}
+.w-7{
+  width: 7%;
+}
+.w-8{
+  width: 8%;
+}
+.w-9{
+  width: 9%;
+}
+.w-10{
+  width: 10%;
+}
+.w-11{
+  width: 11%;
+}
+.w-12{
+  width: 12%;
+}
+.w-13{
+  width: 13%;
+}
+.w-14{
+  width: 14%;
+}
+.w-15{
+  width: 15%;
+}
+.w-16{
+  width: 16%;
+}
+.w-17{
+  width: 17%;
+}
+.w-18{
+  width: 18%;
+}
+.w-19{
+  width: 19%;
+}
+.w-20{
+  width: 20%;
+}
+.w-21{
+  width: 21%;
+}
+.w-22{
+  width: 22%;
+}
+.w-25{
+  width: 25%;
+}
+.w-26{
+  width: 26%;
+}
+.w-30{
+  width: 30%;
+}
+.w-32{
+  width: 32%;
+}
+.w-33{
+  width: 33%;
+}
+.w-34{
+  width: 34%;
+}
+.w-35{
+  width: 35%;
+}
+.w-36{
+  width: 36%;
+}
+.w-40{
+  width: 40%;
+}
+.w-45{
+  width: 45%;
+}
+.w-60{
+  width: 60%;
+}
+.w-65{
+  width: 65%;
+}
+.w-70{
+  width: 70%;
+}
+
+.text-black{
+  color: $black!important;
+}
+
+.px-10{
+  padding-left: 0.625rem !important;
+  padding-right: 0.625rem !important;
+}
+
+.px-12{
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+}
+
+.h-40{
+  height: 40%;
+}
+
+.h-60{
+  height: 60%;
+}
+
+.p-20{
+  padding: 1.25rem !important;
+}
+
+.px-20{
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+
+.py-20{
+  padding-top: 1.25rem !important;
+  padding-bottom: 1.25rem !important;
+}
+
+.mx-10{
+  margin-left: 0.625rem !important;
+  margin-right: 0.625rem !important;
+}
+
+.mr-12{
+  margin-right: 0.75rem !important;
+}
+
+.mr-10{
+  margin-right: 0.625rem !important;
+}
+
+.ml-10{
+  margin-left: 0.625rem !important;
+}
+
+.w-0{
+  width: 0%!important;
+}
+
+.flex-row-reverse{
+  flex-direction: row-reverse;
+}
+
+.py-10{
+  padding-top: 0.625rem !important;
+  padding-bottom: 0.625rem !important;
+}
+
+.border-bottom-gray-2{
+  border-bottom: 1px solid #E0E4EB;
+}
+
+.ml-12{
+  margin-left: 0.75rem !important;
+}
+
+.vertical-border-gray{
+  border-top: 1px solid #F7F8FA;
+  border-bottom: 1px solid #F7F8FA;
+}
+
+.pr-20{
+  padding-right: 1.25rem !important;
+}
+
+.pl-20{
+  padding-left: 1.25rem !important;
+}
+
+.pb-10{
+  padding-bottom: 0.625rem !important;
+}
+
+.pt-10{
+  padding-top: 0.625rem !important;
+}
+
+.pr-10{
+  padding-right: 0.625rem !important;
+}
+
+.pl-10{
+  padding-left: 0.625rem !important;
+}
+
+.p-10{
+  padding: 0.625rem !important;
+}
+
+.py-12{
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+.f-18{
+  font-size: 1.125rem;
+}
+
+.f-20{
+  font-size: 1.25rem;
+}
+
+.f-24{
+  font-size: 1.5rem;
+}
+
+.f-32{
+  font-size: 2rem;
+}
+
+.f-48{
+  font-size: 3rem;
+}
+
+.f-60{
+  font-size: 3.75rem;
+}
+
+.f-90{
+  font-size: 5.625rem;
+}
+
+.h-cursor{
+  cursor: pointer;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+.justify-content-evenly{
+  justify-content: space-evenly;
+}
+
+.justify-content-around{
+  justify-content: space-around;
+}
+
+.fr-16{
+  font-size: 16px;
+}
+
+.fr-20{
+  font-size: 20px;
+}
+
+.fr-24{
+  font-size: 24px;
+}
+
+.fr-48{
+  font-size: 48px;
+}
+
+.fr-60{
+  font-size: 60px;
+}
+
+.fr-90{
+  font-size: 90px;
+}
+
+.btn-primary-custom{
+  width: fit-content;
+  border-radius: 40px;
+  background-color: $primary-4;
+  color: #ffffff;
+  padding: 16px 24px;
+  font-size: 18px;
+  &:hover{
+    color: #ffffff;
+    background-color: $primary;
+  }
+
+  @include media-breakpoint-down(sm){
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .fr-16{
+    font-size: 13px;
+  }
+  .fr-20{
+    font-size: 14px;
+  }
+  .fr-24{
+    font-size: 18px;
+  }
+  .fr-48{
+    font-size: 32px;
+  }
+  .fr-60{
+    font-size: 35px;
+  }
+  .fr-90{
+    font-size: 45px;
+  }
+}

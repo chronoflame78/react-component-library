@@ -1,0 +1,325 @@
+.about-page-wrapper{
+    .skills-section{
+        padding-top: 94px;
+        height: 100vh;
+
+        .description-text{
+            font-size: 19px;
+            line-height: 33px;
+            padding-bottom: 24px;
+            max-width: 60%;
+            color: $grey-11;
+        }
+
+        .mySwiper{
+            position: initial;
+        }
+
+        .swiper-button-prev {
+            left: -36px;
+            color: #138aa9;
+            transition: transform 0.5s linear;
+            &:after{
+                font-weight: bold;
+            }
+            &:hover{
+                color: $primary;
+                transform: scale(1.1, 1.1);
+            }
+        }
+
+        .swiper-button-next{
+            right: -36px;
+            color: #138aa9;
+            transition: transform 0.5s linear;
+            &:after{
+                font-weight: bold;
+            }
+            &:hover{
+                color: $primary;
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+
+    .experience-section{
+        padding-top: 64px;
+        height: 100vh;
+        background-color: #f8f8f8;
+    }
+
+    .text-gray{
+        color: #ababab;
+    }
+
+    .work-des-txt{
+        color: #88888888;
+        max-width: 580px;
+    }
+
+    .card-item{
+        width: 248px;
+        height: 264px;
+
+        // background-color: #323232;
+        // color: #9999A1;
+        // box-shadow: 0px 15px 120px -35px #1f1f1f;
+
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(14,29,44,.15);
+
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        
+        cursor: pointer;
+        .logo-react, .logo-javascript, .logo-typescript, .logo-redux, .logo-html, .logo-css, .logo-jest, .logo-git{
+            width: 64px;
+            height: 64px;
+        }
+
+        &:hover{
+            --translateYValue: -15px;
+            animation: translateYAnimation 1s ease-in-out forwards;
+            .logo-react{
+                animation: rotate 2s linear infinite; 
+            }
+        }
+    }
+
+    .we-item{
+        width: 100%;
+        padding: 20px 70px;
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 10px rgba(14,29,44,.15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover{
+            box-shadow: 0 2px 10px #138aa9;
+        }
+
+        .w-300{
+            width: 300px;
+        }
+
+        .item-logo{
+            width: 140px;
+            .logo-kraken{
+                width: 140px;
+            }
+        }
+
+        .period-txt{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .company-position{
+            width: 300px;
+        }
+
+        .company-txt{
+            font-size: 14px;
+            color: #dd584f;
+        }
+
+        .position-txt{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .website-link{
+            color: $black;
+            font-weight: bold;
+
+            &:hover{
+                color: #138aa9;
+                .icon-arrow{
+                    --translateXValue: 6px;
+                    animation: translateXAnimation 0.5s linear forwards;
+                }
+            }
+
+            
+        }
+    }
+
+    .recent-work-item{
+        cursor: pointer;
+        width: 100%;
+        .re-img-container{
+            width: 100%;
+            height: 120px;
+            overflow: hidden;
+            .re-image{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: 0 2px 10px rgba(14,29,44,.15);
+            }
+        }
+        
+
+        &:hover{
+            .re-image{
+                transform: scale(1.1, 1.1);
+                transition: transform 1s linear;
+            }
+
+            .name-text{
+                color: $primary;
+            }
+        }
+    }
+
+    .re-Swiper{
+        padding-bottom: 48px;
+    }
+}
+
+.shape32-container{
+    position: absolute;
+    right: 0;
+    top: 100vh;
+    z-index: -1;
+    height: 100%;
+
+    .shape32-svg{
+        height: 100%;
+        fill: #48c5ea;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-page-wrapper{
+        .skills-section{
+            height: 500px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .description-text{
+                font-size: 15px;
+                line-height: 28px;
+                padding-left: 8px;
+                padding-right: 8px;
+                max-width: 100%;
+            }
+            
+            .swiper-button-prev{
+                left: -16px;
+                transform: scale(0.7);
+                &:hover{
+                    transform: scale(0.8, 0.8);
+                }
+            }
+            .swiper-button-next{
+                right: -16px;
+                transform: scale(0.7);
+                &:hover{
+                    transform: scale(0.8, 0.8);
+                }
+            }
+        }
+        .experience-section{
+            height: fit-content;
+        }
+        .card-item{
+            width: 142px;
+            height: 152px;
+            .logo-react, .logo-javascript, .logo-typescript, .logo-redux, .logo-html, .logo-css, .logo-jest, .logo-git{
+                width: 48px;
+                height: 48px;
+            }
+        }
+        .we-item{
+            flex-wrap: wrap;
+            padding: 20px 20px;
+
+            .company-position{
+                width: 250px;
+            }
+
+            .item-logo{
+                margin-bottom: 20px;
+            }
+    
+            .period-txt{
+                font-size: 16px;
+                font-weight: bold;
+                width: 250px;
+                margin-bottom: 20px;
+            }
+    
+            .company-txt{
+                font-size: 13px;
+                color: #dd584f;
+                margin-bottom: 10px;
+            }
+    
+            .position-txt{
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .website-link{
+                font-size: 14px;
+            }
+        }
+        
+        .recent-work-item{
+            .name-text{
+                font-size: 13px;
+            }
+        }
+        .re-Swiper{
+            padding-bottom: 50px;
+        }
+    }
+    
+}
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the distance as needed */
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes translateYAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(var(--translateYValue));
+    }
+}
+
+@keyframes translateXAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(var(--translateXValue));
+    }
+}

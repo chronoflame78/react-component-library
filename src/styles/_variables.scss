@@ -1,0 +1,97 @@
+$grid-columns: 24 !default;
+$grid-gutter-width: 30px !default;
+
+$font-family-base: "Roboto", sans-serif;
+$headings-font-family: "Roboto Slab", sans-serif;
+$font-family-monospace: $font-family-base;
+$theme-colors: (
+  "primary": #009ebf,
+  "secondary": #fa6201
+);
+// Colors
+$primary: #009ebf;
+$primary-1: #064053;
+$primary-2: #1a7898;
+$primary-3: #00c3dc;
+$primary-4: #138AA9;
+$black: #212529;
+
+$secondary: #fa6201;
+$secondary-1: #fdc099;
+$secondary-2: #17a096;
+$star: #ffb100;
+
+$secondary-error:#FEF0CB;
+$secondary-border:#FDA21A;
+
+$white: #fff;
+$green: #267B00;
+$error: #cb0000;
+$warning: #ffb100;
+$orange: #F6511D;
+
+$nav-tab-active-border: #FF9858;
+
+//Grey
+$grey-1: #666666;
+$grey-2: #d9d9d9;
+$grey-3: #bbb;
+$grey-4: #999999;
+$grey-5: #f8f8f8;
+$grey-6: #444444;
+$grey-7: #eaeaea;
+$grey-8: #222;
+$grey-9: #f2f2f2;
+$grey-10: #888888;
+$grey-11: #9CA3AF;
+$grey-12: #6B7280;
+
+$border-color: $grey-2;
+$disabled-bg: #e9ecef;
+
+// Custom Radio Variables
+$custom-control-indicator-size: 1.125rem;
+$custom-control-indicator-border-color: $grey-3;
+$custom-control-indicator-checked-border-color: $grey-3;
+$custom-control-indicator-checked-bg: $white;
+$custom-control-indicator-checked-color: $secondary;
+$custom-control-indicator-active-bg: $secondary-1;
+$custom-control-indicator-focus-box-shadow: $white;
+/*$custom-radio-indicator-icon-checked: str-replace(
+  url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 9 9'%3e%3ccircle r='4' fill='#{$custom-control-indicator-checked-color}'/%3e%3c/svg%3e"),
+  "#",
+  "%23"
+);*/
+$custom-radio-indicator-icon-checked: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 9 9'%3e%3ccircle r='4' fill='%23fa6201'/%3e%3c/svg%3e");
+
+//Input Variables
+$input-border-color: $grey-2;
+//$input-height: calc(#{$input-line-height * 1em} + #{$input-padding-y * 2});
+
+// Responsive Variables
+$desktop: "only screen and (min-width: 1366px)";
+$tablet: "only screen and (min-width: 768px) and (max-width: 1024px)";
+$mobile: "only screen and (max-width: 576px)";
+
+$modal-md: 510px !default;
+
+// Tooltips
+$tooltip-max-width:                 300px !default;
+$tooltip-color:                     $white !default;
+$tooltip-bg:                        $primary !default;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 992px,
+  md: 993px,
+  lg: 994px,
+  xl: 1200px
+);
+
+// Boostrap breakpoints
+// Extra Small (xs): Up to 576px
+// Small (sm): 576px and up
+// Medium (md): 768px and up
+// Large (lg): 992px and up
+// Extra Large (xl): 1200px and up

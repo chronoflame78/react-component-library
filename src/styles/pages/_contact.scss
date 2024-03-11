@@ -1,0 +1,79 @@
+.contact-page-wrapper{
+    height: 100vh;
+    padding-top: 94px;
+
+    .contact-section-content{
+        display: flex;
+        .sub-section-1{
+            width: 60%;
+            height: 620px;
+        }
+        .sub-section-2{
+            width: 40%;
+            padding-left: 24px;
+            height: 620px;
+        }
+    }
+
+    .form-container{
+        box-shadow: 0 2px 10px rgba(14,29,44,.15);
+        border-radius: 5px;
+    }
+
+    .custom-input{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #ebebeb;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &:focus{
+            border-bottom: 1px solid #138aa9;
+        }
+    }
+
+    .err-msg{
+        position: absolute;
+        bottom: 0;
+        font-size: 13px;
+    }
+
+    .custom-text-area{
+        height: 280px;
+    }
+
+    .download-resume-container{
+        box-shadow: 0 2px 10px rgba(14,29,44,.15);
+        border-radius: 5px;
+
+        .resume-image{
+            width: 150px;
+            border: 1px solid #ececec;
+        }
+    }
+
+    .social-icon{
+        :hover{
+            --translateYValue: -5px;
+            animation: translateYAnimation 0.5s linear forwards;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contact-page-wrapper{
+        .contact-section-content{
+            flex-direction: column;
+            .sub-section-1{
+                width: 100%;
+            }
+            .sub-section-2{
+                width: 100%;
+                padding-left: 0px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

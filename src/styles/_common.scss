@@ -1,0 +1,81 @@
+.top-pane-container{
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    .top-pane{
+        .leo-icon{
+            width: 50px;
+            height: 94px;
+        }
+        .top-pane-nav{
+            .navbar-ul{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                margin-bottom: 0;
+                
+                .nav-item{
+                    border-bottom: 4px solid;
+                    border-bottom-color: transparent;
+                    transition: border-color 0.4s ease;
+                    .nav-link{
+                        color: $black;
+                        font-weight: 500;
+                        height: 90px;
+                        display: flex;
+                        align-items: center;  
+                    }
+                    &.active, &:hover{
+                        border-bottom-color: $primary-4;
+                    }
+                }
+            }
+        }
+    }
+    .menu-toggle-button{
+        border: none;
+        border-radius: 0.25rem;
+        padding: 4px 8px;
+        background-color: #138aa9;
+        cursor: pointer;
+    }
+    .mobile-menu{
+        background-color: #1e1e1e;
+        width: 50vw;
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+
+        .menu-item{
+            color: #88888888;
+            cursor: pointer;
+
+            &.active{
+                color: #ffffff;
+                font-weight: 500;
+            }
+
+            &:hover{
+                color: #ffffff;
+                font-weight: 500;
+            }
+        }
+    }
+    .close-menu-button{
+        border: 1px solid #ffffff;
+        padding: 4px 8px;
+        background-color: #1e1e1e;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 992px) {
+    .top-pane{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

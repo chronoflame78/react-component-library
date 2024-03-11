@@ -1,0 +1,253 @@
+.home-page-wrapper{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.home-page-section{
+    height: 100vh;
+    padding-top: 24px;
+    .hello-text{
+        color: #b3a206;
+    }
+
+    .name-text{
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .title-text{
+        font-size: 32px;
+        padding-bottom: 24px;
+    }
+
+    .description-text{
+        font-size: 19px;
+        line-height: 33px;
+        padding-bottom: 24px;
+    }
+
+    .main-image{
+        width: 570px;
+        height: 570px;
+        border-radius: 50%;
+        position: relative;
+        left: 120px;
+        bottom: 40px;
+
+        // @media (max-height: 800px) or (max-width: 1480px) {
+        //     width: 470px;
+        //     height: 470px;
+        // }
+    }
+
+    .logo-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 25px;
+        box-shadow: 0 2px 10px rgba(14,29,44,.15);
+
+        .bg-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+        }
+
+        .react-logo, .redux-logo, .sass-logo{
+            width: 50px;
+            height: 50px;
+        }
+
+        .js-logo{
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+        }
+        
+    }
+
+    .react-logo-container{
+        top: 0px;
+        left: 164px;  
+        .bg-container{
+            background-color: #222;
+        }
+    }
+
+    .js-logo-container{
+        top: 0px;
+        left: 566px;
+    }
+
+    .redux-logo-container{
+        top: 428px;
+        left: 522px;
+    
+        .bg-container{
+            background-color: #f7f7f7;
+        }
+    }
+
+    .sass-logo-container{
+        top: 342px;
+        left: 144px;
+    
+        .bg-container{
+            background-color: #CF649A;
+        }
+    } 
+}
+
+.shape1-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+
+    .shape1-svg{
+        height: 100%;
+        circle{
+            fill: #ff4155;
+        }
+    }
+}
+
+.shape2-container{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    height: 100%;
+
+    .shape2-svg{
+        height: 100%;
+        circle{
+            fill: #ffe600;
+        }
+    }
+}
+
+.shape3-container{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+
+    .shape3-svg{
+        height: 100%;
+        circle{
+            fill: #48c5ea;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .home-page-section{
+        height: auto;
+        align-items: center;
+        padding-top: 84px;
+        padding-bottom: 36px;
+
+        .row{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .info-container{
+            text-align: center;
+        
+            .name-text{
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+        
+            .title-text{
+                font-size: 22px;
+                padding-bottom: 10px;
+            }
+        
+            .description-text{
+                font-size: 15px;
+                line-height: 28px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+            .button-container{
+                display: flex;
+                justify-content: center;
+            }
+        }   
+
+        .image-container{
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            .main-image{
+                width: 300px;
+                height: 300px;
+                position: static;
+            }
+        }
+    
+        .react-logo-container{
+            top: 20px;
+            left: 0px;
+        }
+
+        .js-logo-container{
+            top: 40px;
+            left: 246px;
+        }
+
+        .redux-logo-container{
+            top: 228px;
+            left: 212px;
+        }
+
+        .sass-logo-container{
+            top: 222px;
+            left: 20px;
+        }
+    
+        .logo-container{
+            width: 70px;
+            height: 70px;
+            border-radius: 15px;
+    
+            .bg-container{
+                width: 45px;
+                height: 45px;
+                border-radius: 10px;
+            }
+            .react-logo, .redux-logo, .sass-logo{
+                width: 30px;
+                height: 30px;
+            }
+    
+            .js-logo{
+                width: 45px;
+                height: 45px;
+                border-radius: 10px;
+            }
+            
+        }
+    }
+    .shape32-container{
+        display: none;
+    }
+    .shape1-container{
+        display: none;
+    }
+}
