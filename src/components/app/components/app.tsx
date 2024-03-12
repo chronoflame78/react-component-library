@@ -12,7 +12,7 @@ import {
   faEnvelope,
   faDownload,
   faBars,
-  faXmark
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   fab,
@@ -61,13 +61,15 @@ function App(props) {
   });
 
   return (
-    <>
+    <div className="app-container">
       <TopPane />
-      <div>
+      <div className="page-container">
         <Outlet />
       </div>
+      
+
       <ToastContainer />
-    </>
+    </div>
   );
 }
 

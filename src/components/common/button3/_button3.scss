@@ -1,0 +1,51 @@
+.button-3 {
+  padding: 10px 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #262626;
+  font-size: 24px;
+  letter-spacing: 2px;
+  border: 3px solid #262626;
+  position: relative;
+  transition: 1s;
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+.button-3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateX(90deg);
+  z-index: -1;
+}
+
+.button-3:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262626;
+  transition: 1s;
+  transform: rotateY(90deg);
+  z-index: -1;
+}
+
+.button-3:hover:before {
+  transform: rotateX(0);
+}
+
+.button-3:hover:after {
+  transform: rotateY(0);
+}
+
+.button-3:hover {
+  color: white;
+}

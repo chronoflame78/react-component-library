@@ -1,54 +1,64 @@
-import myImage from "../../../assets/leo_image2.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Location, useLocation, useNavigate } from "react-router-dom";
-import * as SVGComponents from "../../../styles/svgIcons";
-import AboutPage from "../../info/containers/aboutPage";
-import ContactPage from "../../contact/containers/contactPage";
-import { useRef, useEffect } from "react";
-import { ABOUT_PATH, CONTACT_PATH, HOME_PATH } from "../../../utils/constant";
+import React from "react";
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
+import Button1 from "../../common/button1/button1";
+import Button2 from "../../common/button2/button2";
+import Button3 from "../../common/button3/button3";
+interface Props {
 
-interface IProps {
-  isMobileView: boolean;
 }
 
-function HomePage(props: IProps) {
-  const location: Location = useLocation();
-  const { pathname } = location;
-  const navigate = useNavigate();
-  const aboutPageRef = useRef<HTMLDivElement>(null);
-  const contactPageRef = useRef<HTMLDivElement>(null);
+class HomePage extends React.Component<Props, any> {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-  const navigateToAbout = () => {
-    navigate("/about");
-  };
+  render() {
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const scrollToAboutPage = () => {
-    aboutPageRef?.current?.scrollIntoView({block: "start", inline: "nearest", behavior: "smooth" });
-  };
-
-  const scrollToContactPage = () => {
-    contactPageRef?.current?.scrollIntoView({block: "start", inline: "nearest", behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    if (pathname === HOME_PATH) {
-      scrollToTop();
-    } else if (pathname === ABOUT_PATH) {
-      scrollToAboutPage();
-    } else if (pathname === CONTACT_PATH) {
-      scrollToContactPage();
-    }
-  }, [pathname]);
-
-  return (
-    <>
-
-    </>
-  );
+    return (
+      <div className="home-container">
+        <div className="grid-item">
+          <Button1 />
+        </div>
+        <div className="grid-item">
+          <Button2 />
+        </div>
+        <div className="grid-item">
+          <Button3 />
+        </div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+        <div className="grid-item"></div>
+      </div>
+    );
+  }
 }
 
-export default HomePage;
+const mapStateToProps = (state: any) => {
+  return {};
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return bindActionCreators({}, dispatch);
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);
