@@ -1,0 +1,33 @@
+.button-5 {
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	font-size: 24px;
+	border: 3px solid white;
+	padding: 10px 20px;
+	position: relative;
+	transition: all 1s;
+	overflow: hidden;
+	background-color: #000000;
+}
+
+.button-5:before {
+	content: 'YEAH!';
+	color: white;
+	background-color: #F44336;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	transform: translateY(-100%);
+	transition:all .5s;
+}
+
+.button-5:hover:before {
+	transform: translateY(0);
+}
+
