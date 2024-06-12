@@ -83,11 +83,9 @@ function TopPane(props) {
       className="top-pane-container"
       style={{ backgroundColor: navbarColor }}
     >
-      <nav className="top-pane container d-flex align-items-center justify-content-between">
-        <div className="h-cursor" onClick={() => redirectToHomePage()}>
-          <span className="f-20 font-weight-bold primary-color-2">
+      <div className="top-pane d-flex align-items-center justify-content-between px-20">
+        <div className="h-cursor f-20 font-weight-bold primary-color-2" onClick={() => redirectToHomePage()}>
             Component Library
-          </span>
         </div>
         {props.isMobileView && (
           <button className="menu-toggle-button" type="button" onClick={() => toggleMenu(true)}>
@@ -133,7 +131,7 @@ function TopPane(props) {
             </ul>
           </div>
         )}
-      </nav>
+      </div>
 
       {props.isMobileView && isMenuOpen && <div className="mobile-menu" ref={menuRef}>
         <div className="py-4 d-flex flex-row-reverse">

@@ -9,6 +9,10 @@ import Button5 from "../../common/button5/button5";
 import Button6 from "../../common/button6/button6";
 import Button7 from "../../common/button7/button7";
 import Loading1 from "../../loading-animation/loading1/loading1";
+import Button8 from "../../common/button8/button8";
+import Button9 from "../../common/button9/button9";
+import Button10 from "../../common/button10/button10";
+import Button11 from "../../common/button11/button11";
 interface Props {}
 
 class HomePage extends React.Component<Props, any> {
@@ -44,10 +48,18 @@ class HomePage extends React.Component<Props, any> {
         <div className="grid-item">
           <Loading1 />
         </div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
-        <div className="grid-item"></div>
+        <div className="grid-item">
+          <Button8 />
+        </div>
+        <div className="grid-item">
+          <Button9 />
+        </div>
+        <div className="grid-item">
+          <Button10 />
+        </div>
+        <div className="grid-item">
+          <Button11 />
+        </div>
         <div className="grid-item"></div>
         <div className="grid-item"></div>
         <div className="grid-item"></div>
